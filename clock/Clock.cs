@@ -16,5 +16,20 @@ namespace clock
         {
             InitializeComponent();
         }
+
+        private void clockTimer_Tick(object sender, EventArgs e)
+        {
+            clockLabel.Text = DateTime.Now.ToString("hh:mm:ss");
+        }
+
+        private void clockLabel_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Clock_Load(object sender, EventArgs e)
+        {
+            clockTimer.Start();
+        }
     }
 }
