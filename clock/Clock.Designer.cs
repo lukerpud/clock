@@ -44,7 +44,7 @@
             this.clockLabel.Size = new System.Drawing.Size(900, 528);
             this.clockLabel.TabIndex = 0;
             this.clockLabel.Text = "...";
-            this.clockLabel.Click += new System.EventHandler(this.clockLabel_Click);
+            this.clockLabel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.clockLabel_MouseDown);
             // 
             // clockTimer
             // 

@@ -4,7 +4,9 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -22,14 +24,14 @@ namespace clock
             clockLabel.Text = DateTime.Now.ToString("hh:mm:ss");
         }
 
-        private void clockLabel_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void Clock_Load(object sender, EventArgs e)
         {
             clockTimer.Start();
+        }
+
+        private void clockLabel_MouseDown(object sender, MouseEventArgs e)
+        {
+            clockLabel.Text = DateTime.Now.ToString("MMMM d,yyyy");
         }
     }
 }
