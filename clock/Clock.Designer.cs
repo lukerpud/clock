@@ -31,6 +31,10 @@
             this.components = new System.ComponentModel.Container();
             this.clockLabel = new System.Windows.Forms.Label();
             this.clockTimer = new System.Windows.Forms.Timer(this.components);
+            this.buttonGreen = new System.Windows.Forms.Button();
+            this.buttonRed = new System.Windows.Forms.Button();
+            this.buttonPink = new System.Windows.Forms.Button();
+            this.buttonBlue = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // clockLabel
@@ -38,12 +42,14 @@
             this.clockLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.clockLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 90F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clockLabel.ForeColor = System.Drawing.Color.Red;
-            this.clockLabel.Location = new System.Drawing.Point(12, 9);
-            this.clockLabel.MaximumSize = new System.Drawing.Size(900, 900);
+            this.clockLabel.Location = new System.Drawing.Point(0, 9);
+            this.clockLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.clockLabel.MaximumSize = new System.Drawing.Size(675, 731);
             this.clockLabel.Name = "clockLabel";
-            this.clockLabel.Size = new System.Drawing.Size(900, 528);
+            this.clockLabel.Size = new System.Drawing.Size(675, 455);
             this.clockLabel.TabIndex = 0;
             this.clockLabel.Text = "...";
+            this.clockLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.clockLabel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.clockLabel_MouseDown);
             // 
             // clockTimer
@@ -51,12 +57,57 @@
             this.clockTimer.Interval = 1000;
             this.clockTimer.Tick += new System.EventHandler(this.clockTimer_Tick);
             // 
+            // buttonGreen
+            // 
+            this.buttonGreen.BackColor = System.Drawing.Color.Green;
+            this.buttonGreen.Location = new System.Drawing.Point(12, 439);
+            this.buttonGreen.Name = "buttonGreen";
+            this.buttonGreen.Size = new System.Drawing.Size(18, 16);
+            this.buttonGreen.TabIndex = 1;
+            this.buttonGreen.UseVisualStyleBackColor = false;
+            this.buttonGreen.Click += new System.EventHandler(this.buttonGreen_Click);
+            // 
+            // buttonRed
+            // 
+            this.buttonRed.BackColor = System.Drawing.Color.Red;
+            this.buttonRed.Location = new System.Drawing.Point(36, 439);
+            this.buttonRed.Name = "buttonRed";
+            this.buttonRed.Size = new System.Drawing.Size(18, 16);
+            this.buttonRed.TabIndex = 2;
+            this.buttonRed.UseVisualStyleBackColor = false;
+            this.buttonRed.Click += new System.EventHandler(this.buttonRed_Click);
+            // 
+            // buttonPink
+            // 
+            this.buttonPink.BackColor = System.Drawing.Color.Pink;
+            this.buttonPink.Location = new System.Drawing.Point(60, 439);
+            this.buttonPink.Name = "buttonPink";
+            this.buttonPink.Size = new System.Drawing.Size(18, 16);
+            this.buttonPink.TabIndex = 3;
+            this.buttonPink.UseVisualStyleBackColor = false;
+            this.buttonPink.Click += new System.EventHandler(this.buttonPink_Click);
+            // 
+            // buttonBlue
+            // 
+            this.buttonBlue.BackColor = System.Drawing.Color.Blue;
+            this.buttonBlue.Location = new System.Drawing.Point(84, 439);
+            this.buttonBlue.Name = "buttonBlue";
+            this.buttonBlue.Size = new System.Drawing.Size(18, 16);
+            this.buttonBlue.TabIndex = 4;
+            this.buttonBlue.UseVisualStyleBackColor = false;
+            this.buttonBlue.Click += new System.EventHandler(this.buttonBlue_Click);
+            // 
             // Clock
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(921, 559);
+            this.ClientSize = new System.Drawing.Size(677, 459);
+            this.Controls.Add(this.buttonBlue);
+            this.Controls.Add(this.buttonPink);
+            this.Controls.Add(this.buttonRed);
+            this.Controls.Add(this.buttonGreen);
             this.Controls.Add(this.clockLabel);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Clock";
             this.Text = "clock";
             this.Load += new System.EventHandler(this.Clock_Load);
@@ -68,6 +119,10 @@
 
         private System.Windows.Forms.Label clockLabel;
         private System.Windows.Forms.Timer clockTimer;
+        private System.Windows.Forms.Button buttonGreen;
+        private System.Windows.Forms.Button buttonRed;
+        private System.Windows.Forms.Button buttonPink;
+        private System.Windows.Forms.Button buttonBlue;
     }
 }
 

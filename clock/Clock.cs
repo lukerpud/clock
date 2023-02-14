@@ -17,6 +17,10 @@ namespace clock
         public Clock()
         {
             InitializeComponent();
+            buttonRed.FlatStyle = FlatStyle.Flat;
+            buttonPink.FlatStyle = FlatStyle.Flat;
+            buttonBlue.FlatStyle = FlatStyle.Flat;
+            buttonGreen.FlatStyle = FlatStyle.Flat;
         }
 
         private void clockTimer_Tick(object sender, EventArgs e)
@@ -32,6 +36,27 @@ namespace clock
         private void clockLabel_MouseDown(object sender, MouseEventArgs e)
         {
             clockLabel.Text = DateTime.Now.ToString("MMMM d,yyyy");
+        }
+
+        private void buttonGreen_Click(object sender, EventArgs e)
+        {
+            clockLabel.ForeColor = Color.Green;
+
+        }
+
+        private void buttonRed_Click(object sender, EventArgs e)
+        {
+            clockLabel.ForeColor = Color.Red;
+        }
+
+        private void buttonPink_Click(object sender, EventArgs e)
+        {
+            clockLabel.ForeColor = Color.Pink;
+        }
+
+        private void buttonBlue_Click(object sender, EventArgs e)
+        {
+            clockLabel.ForeColor = Color.Blue;
         }
     }
 }
