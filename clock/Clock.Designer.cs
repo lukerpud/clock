@@ -35,6 +35,7 @@
             this.buttonRed = new System.Windows.Forms.Button();
             this.buttonPink = new System.Windows.Forms.Button();
             this.buttonBlue = new System.Windows.Forms.Button();
+            this.script = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // clockLabel
@@ -97,17 +98,29 @@
             this.buttonBlue.UseVisualStyleBackColor = false;
             this.buttonBlue.Click += new System.EventHandler(this.buttonBlue_Click);
             // 
+            // script
+            // 
+            this.script.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.script.Location = new System.Drawing.Point(166, 432);
+            this.script.Name = "script";
+            this.script.Size = new System.Drawing.Size(75, 23);
+            this.script.TabIndex = 5;
+            this.script.Text = "button1";
+            this.script.UseVisualStyleBackColor = true;
+            this.script.Click += new System.EventHandler(this.script_Click);
+            // 
             // Clock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(677, 459);
+            this.Controls.Add(this.script);
             this.Controls.Add(this.buttonBlue);
             this.Controls.Add(this.buttonPink);
             this.Controls.Add(this.buttonRed);
             this.Controls.Add(this.buttonGreen);
             this.Controls.Add(this.clockLabel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Clock";
             this.Text = "clock";
             this.Load += new System.EventHandler(this.Clock_Load);
@@ -123,6 +136,7 @@
         private System.Windows.Forms.Button buttonRed;
         private System.Windows.Forms.Button buttonPink;
         private System.Windows.Forms.Button buttonBlue;
+        private System.Windows.Forms.Button script;
     }
 }
 

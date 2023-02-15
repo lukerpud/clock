@@ -58,5 +58,10 @@ namespace clock
         {
             clockLabel.ForeColor = Color.Blue;
         }
+
+        private void script_Click(object sender, EventArgs e)
+        {
+            clockLabel.Font = new Font("Segoe Print", 80, FontStyle.Regular);
+        }
     }
 }
