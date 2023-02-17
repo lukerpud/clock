@@ -21,6 +21,8 @@ namespace clock
             buttonPink.FlatStyle = FlatStyle.Flat;
             buttonBlue.FlatStyle = FlatStyle.Flat;
             buttonGreen.FlatStyle = FlatStyle.Flat;
+            script.FlatStyle = FlatStyle.Flat;
+            sansButton.FlatStyle = FlatStyle.Flat;
         }
 
         private void clockTimer_Tick(object sender, EventArgs e)
@@ -62,6 +64,11 @@ namespace clock
         private void script_Click(object sender, EventArgs e)
         {
             clockLabel.Font = new Font("Segoe Print", 80, FontStyle.Regular);
+        }
+
+        private void sansButton_Click(object sender, EventArgs e)
+        {
+            clockLabel.Font = new Font("Microsoft Sans Serif", 90, FontStyle.Regular);
         }
     }
 }

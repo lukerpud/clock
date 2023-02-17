@@ -36,6 +36,7 @@
             this.buttonPink = new System.Windows.Forms.Button();
             this.buttonBlue = new System.Windows.Forms.Button();
             this.script = new System.Windows.Forms.Button();
+            this.sansButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // clockLabel
@@ -101,19 +102,31 @@
             // script
             // 
             this.script.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.script.Location = new System.Drawing.Point(166, 432);
+            this.script.Location = new System.Drawing.Point(160, 423);
             this.script.Name = "script";
-            this.script.Size = new System.Drawing.Size(75, 23);
+            this.script.Size = new System.Drawing.Size(81, 32);
             this.script.TabIndex = 5;
-            this.script.Text = "button1";
+            this.script.Text = "Segoe";
             this.script.UseVisualStyleBackColor = true;
             this.script.Click += new System.EventHandler(this.script_Click);
+            // 
+            // sansButton
+            // 
+            this.sansButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sansButton.Location = new System.Drawing.Point(247, 423);
+            this.sansButton.Name = "sansButton";
+            this.sansButton.Size = new System.Drawing.Size(81, 32);
+            this.sansButton.TabIndex = 6;
+            this.sansButton.Text = "Sans";
+            this.sansButton.UseVisualStyleBackColor = true;
+            this.sansButton.Click += new System.EventHandler(this.sansButton_Click);
             // 
             // Clock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(677, 459);
+            this.Controls.Add(this.sansButton);
             this.Controls.Add(this.script);
             this.Controls.Add(this.buttonBlue);
             this.Controls.Add(this.buttonPink);
@@ -137,6 +150,7 @@
         private System.Windows.Forms.Button buttonPink;
         private System.Windows.Forms.Button buttonBlue;
         private System.Windows.Forms.Button script;
+        private System.Windows.Forms.Button sansButton;
     }
 }
 
