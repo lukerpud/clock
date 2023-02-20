@@ -37,6 +37,7 @@
             this.buttonBlue = new System.Windows.Forms.Button();
             this.script = new System.Windows.Forms.Button();
             this.sansButton = new System.Windows.Forms.Button();
+            this.buttonAlarm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // clockLabel
@@ -121,11 +122,22 @@
             this.sansButton.UseVisualStyleBackColor = true;
             this.sansButton.Click += new System.EventHandler(this.sansButton_Click);
             // 
+            // buttonAlarm
+            // 
+            this.buttonAlarm.Location = new System.Drawing.Point(587, 425);
+            this.buttonAlarm.Name = "buttonAlarm";
+            this.buttonAlarm.Size = new System.Drawing.Size(78, 30);
+            this.buttonAlarm.TabIndex = 7;
+            this.buttonAlarm.Text = "Set Alarm";
+            this.buttonAlarm.UseVisualStyleBackColor = true;
+            this.buttonAlarm.Click += new System.EventHandler(this.buttonAlarm_Click);
+            // 
             // Clock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(677, 459);
+            this.Controls.Add(this.buttonAlarm);
             this.Controls.Add(this.sansButton);
             this.Controls.Add(this.script);
             this.Controls.Add(this.buttonBlue);
@@ -151,6 +163,7 @@
         private System.Windows.Forms.Button buttonBlue;
         private System.Windows.Forms.Button script;
         private System.Windows.Forms.Button sansButton;
+        private System.Windows.Forms.Button buttonAlarm;
     }
 }
 

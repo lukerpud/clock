@@ -70,5 +70,11 @@ namespace clock
         {
             clockLabel.Font = new Font("Microsoft Sans Serif", 90, FontStyle.Regular);
         }
+
+        private void buttonAlarm_Click(object sender, EventArgs e)
+        {
+            Alarm alarm = new Alarm();
+            alarm.Show();
+        }
     }
 }
