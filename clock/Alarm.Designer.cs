@@ -84,7 +84,6 @@
             this.tbMins.Name = "tbMins";
             this.tbMins.Size = new System.Drawing.Size(100, 20);
             this.tbMins.TabIndex = 5;
-            this.tbMins.TextChanged += new System.EventHandler(this.tbMins_TextChanged);
             // 
             // tbSecs
             // 

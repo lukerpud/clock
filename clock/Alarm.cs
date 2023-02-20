@@ -17,17 +17,20 @@ namespace clock
             InitializeComponent();
         }
 
+        public static string time;
+        string hour, min, sec;
         private void button1_Click(object sender, EventArgs e)
         {
+            hour = tbHour.Text;
+            min = tbMins.Text;
+            sec = tbSecs.Text;
+            time = hour+":"+min+":"+sec;
             Close();
         }
 
+     
+
         private void Alarm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbMins_TextChanged(object sender, EventArgs e)
         {
 
         }

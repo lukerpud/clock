@@ -28,6 +28,10 @@ namespace clock
         private void clockTimer_Tick(object sender, EventArgs e)
         {
             clockLabel.Text = DateTime.Now.ToString("hh:mm:ss");
+            if(clockLabel.Text == Alarm.time)
+            {
+                MessageBox.Show("IT is now "+Alarm.time);
+            }
         }
 
         private void Clock_Load(object sender, EventArgs e)
