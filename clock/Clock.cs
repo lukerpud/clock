@@ -23,14 +23,15 @@ namespace clock
             buttonGreen.FlatStyle = FlatStyle.Flat;
             script.FlatStyle = FlatStyle.Flat;
             sansButton.FlatStyle = FlatStyle.Flat;
+            buttonAlarm.FlatStyle = FlatStyle.Flat;
         }
 
         private void clockTimer_Tick(object sender, EventArgs e)
         {
-            clockLabel.Text = DateTime.Now.ToString("hh:mm:ss");
+            clockLabel.Text = DateTime.Now.ToString("h:mm:ss");
             if(clockLabel.Text == Alarm.time)
             {
-                MessageBox.Show("IT is now "+Alarm.time);
+                MessageBox.Show("It is now "+Alarm.time);
             }
         }
 

@@ -106,7 +106,6 @@
             this.Controls.Add(this.submitBTN);
             this.Name = "Alarm";
             this.Text = "Alarm";
-            this.Load += new System.EventHandler(this.Alarm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

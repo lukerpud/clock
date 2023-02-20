@@ -18,7 +18,9 @@ namespace clock
         }
 
         public static string time;
-        string hour, min, sec;
+        private string hour, min, sec;
+
+
         private void button1_Click(object sender, EventArgs e)
         {
             hour = tbHour.Text;
@@ -26,13 +28,6 @@ namespace clock
             sec = tbSecs.Text;
             time = hour+":"+min+":"+sec;
             Close();
-        }
-
-     
-
-        private void Alarm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
